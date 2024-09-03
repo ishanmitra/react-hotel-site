@@ -29,17 +29,7 @@ export async function POST(req: Request, response: Response) {
 
             const {
                 // @ts-ignore
-                metadata: {
-                    adults,
-                    checkinDate,
-                    checkoutDate,
-                    children,
-                    hotelRoom,
-                    numberOfDays,
-                    user,
-                    discount,
-                    totalPrice,
-                },
+                metadata: { adults, checkinDate, checkoutDate, children, hotelRoom, numberOfDays, user, discount, totalPrice, },
             } = session;
 
             await createBooking({
